@@ -1,5 +1,5 @@
-import React from 'react';
+import util from './util';
 
-export default function() {
-  return React;
+export const getHello = () => {
+  return 'hello';
 }
