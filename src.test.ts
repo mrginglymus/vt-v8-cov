@@ -1,6 +1,10 @@
 import {it, expect} from 'vitest';
-import getHello from './src';
+import broken, {working} from './src';
+
+it('doesn\'t work', () => {
+  expect(broken()).toBe('hello')
+})
 
 it('works', () => {
-  expect(getHello()).toBe('hello')
+  expect(working()).toBe('hello')
 })
